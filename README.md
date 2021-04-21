@@ -1,10 +1,10 @@
-# pc端大屏通用开发框架（vue+element-ui）
+# pc端后台/大屏通用开发框架（vue+element-ui）
 
 ## 待解决问题
 
 ## 项目介绍
 
-基于webpack的vue+vant-ui移动端开发模板
+基于webpack的vue+element-ui pc端后台/大屏开发模板
 
 ## 项目核心技术栈
 
@@ -16,14 +16,8 @@ js编译转码工具:babel7
 
 ### ui框架
 
-[vant-ui](https://vant-contrib.gitee.io/vant/#/zh-CN/home)按需引入
+[element-ui](https://element.eleme.cn/#/zh-CN/component/installation)按需引入
 
-### 移动端适配方案
-
-+ 默认375px设计稿
-+ DOM根元素fontSize设置为10vw
-+ 应用postcss-pxtorem基准值设置为37.5
-+ 开发中依据**375px**设计稿使用**px**单位进行设置
   
 ### 三方依赖
 
@@ -54,10 +48,10 @@ js编译转码工具:babel7
 
 ## 项目开发规范
 
-### vant-ui 修改主题样式（less及自定义主题按需加载已经配置完成，无需再进行任何配置）
+### element-ui 修改主题样式
 
-1. 打开[项目全局vant样式变量修改文件](\src\style\variable\vant-reset-variable.less)
-2. 参考[vant官方组件变量配置文件](https://github.com/youzan/vant/blob/dev/src/style/var.less)在[项目全局vant样式变量修改文件](\src\less\variable\vant-reset-variable.less)中进行覆盖修改
+1. 打开[elementui官方自定义主题](https://element.eleme.cn/#/zh-CN/theme)
+2. 下载生成的主题文件替换[theme文件夹]((/src/theme))
 
 ### 请求
 
